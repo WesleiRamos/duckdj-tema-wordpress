@@ -1,0 +1,416 @@
+/*
+Theme Name: DuckDJ
+Text Domain: duckdj
+Version: 1.0
+Description: Tema para o site DuckDJ.
+Author: Weslei Ramos
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+body {
+  color: white;
+  background: #ffc14d;
+  font-family: 'Schoolbell', cursive;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header .logo img {
+  width: 100px;
+  pointer-events: none;
+}
+
+header .menu {
+  width: max-content;
+  margin-bottom: 25px;
+}
+
+header .hamburger-menu {
+  display: none;
+}
+
+header .hamburger-menu .logo {
+  margin-left: -15px;
+  margin-top: 20px;
+}
+
+header .menu ul {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  font-size: 30px;
+  list-style: none;
+}
+
+header .menu ul li {
+  margin: 0 20px;
+  display: inline-block;
+}
+
+.first-page-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 130px 0;
+}
+
+.first-page-content h2 {
+  font-size: 60px;
+}
+
+.first-page-content .last-work {
+  display: flex;
+  width: max-content;
+  margin-top: 40px;
+}
+
+.first-page-content .album-cover {
+  border-radius: 7px;
+  width: 230px;
+  height: 230px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.first-page-content .listen-to {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.first-page-content .song-info {
+  margin-bottom: 20px;
+}
+
+.first-page-content .song-info .name {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.first-page-content .song-info .artist {
+  font-size: 20px;
+}
+
+.first-page-content video {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  object-fit: cover;
+}
+
+.first-page-content button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  height: 75px;
+}
+
+.first-page-content button:disabled {
+  opacity: 0.6;
+}
+
+.first-page-content .progress-bar {
+  margin-bottom: 20px;
+  width: 350px;
+  height: 7px;
+  cursor: pointer;
+  mask-image: url(./assets/images/line.svg);
+  -webkit-mask-image: url(./assets/images/line.svg);
+  -moz-mask-image: url(./assets/images/line.svg);
+}
+
+.first-page-content .progress-bar .progress-bg {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.first-page-content .progress-bar .progress {
+  width: 0;
+  height: 100%;
+  margin-top: -7px;
+  background-color: rgb(20, 20, 20);
+}
+
+.menu-icon {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 2;
+  display: none;
+}
+
+.menu-icon img {
+  width: 40px;
+}
+
+.wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .content {
+  width: 900px;
+  font-size: 22px;
+  margin-top: 40px;
+}
+
+.wrapper h1 {
+  font-size: 70px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.wrapper h2 {
+  font-size: 50px;
+}
+
+.wrapper label {
+  font-size: 25px;  
+}
+
+.wpcf7-form-control-wrap {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.wrapper button,
+.wrapper select,
+.wrapper input[type=submit],
+.wrapper input[type='text'],
+.wrapper input[type='email'],
+.wrapper textarea {
+  box-sizing: border-box;
+  background-color: white;
+  border-top-left-radius: 255px 10px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius: 10px 255px;
+  border: solid 3px white;
+  outline: none;
+  font-family: 'Schoolbell', cursive;
+  font-size: 22px;
+  padding: 10px;
+  transition: .2s;
+}
+
+.wrapper input[type='text'],
+.wrapper input[type='email'],
+.wrapper textarea {
+  width: 100%;
+}
+
+.wrapper textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 10px 455px;
+  border-top-right-radius: 455px 5px;
+  border-bottom-right-radius: 15px 255px;
+  border-bottom-left-radius: 255px 15px;
+}
+
+.wrapper button {
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.wrapper input[type=submit] {
+  min-width: 150px;
+  min-height: 50px;
+  font-size: 25px;
+}
+
+.wrapper button:active,
+.wrapper input[type=submit]:active {
+  opacity: 0.7;
+}
+
+.wrapper .wp-block-table.is-style-stripes {
+  border: none;
+}
+
+.wrapper .wp-block-table.is-style-stripes tbody tr td {
+  padding: 20px 15px;
+}
+
+.wrapper .wp-block-table.is-style-stripes tbody tr td:not(:last-child) {
+  width: 40%;
+}
+
+.wrapper .wp-block-table.is-style-stripes tbody tr td:last-child {
+  width: 20%;
+}
+
+.wrapper .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+  background-color: #f3b84a;
+  margin-bottom: 5px;
+}
+
+footer {
+  user-select: none;
+  box-sizing: border-box;
+  width: 100vw;
+  padding: 50px 0;
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+footer > * {
+  display: flex;
+  align-items: center;
+}
+
+footer .social-medias {
+  margin: 50px 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  width: max-content;
+  height: max-content;
+}
+
+footer a:not(:first-child):not(:last-child) {
+  margin: 0 10px;
+}
+
+footer a img, .invert {
+  filter: invert();
+}
+
+footer a img {
+  width: 40px;
+}
+
+footer .copy {
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+footer .copy img {
+  width: 50px;
+  margin: 0 20px;
+}
+
+footer img {
+  pointer-events: none;
+}
+
+footer a[title='Weslei Ramos'] img {
+  margin: 0 15px;
+  transform: translateX(5px);
+}
+
+footer .privacy-terms {
+  font-size: 18px;
+}
+
+footer .privacy-terms .terms {
+  width: 145px;
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .first-page-content {
+    margin-top: 80px;
+  }
+
+  .first-page-content h2 {
+    font-size: 35px;
+  }
+  
+  .first-page-content .last-work {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .first-page-content .last-work .song-info {
+    margin-top: 20px;
+  }
+
+  header .menu ul li:not(.logo) {
+    display: none;
+  }
+
+  header .hamburger-menu {
+    box-sizing: border-box;
+    position: absolute;
+    padding: 25px 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  header .hamburger-menu.opened {
+    display: flex;
+    animation: fadeIn 0.2s;
+  }
+
+  header .hamburger-menu ul {
+    list-style: none;
+    margin-top: 80px;
+  }
+
+  header .hamburger-menu ul li {
+    margin: 0;
+    display: block;
+    font-size: 35px;
+    margin-top: 20px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrapper .content {
+    width: 90%;
+  }
+
+  .wrapper .content .wp-block-column {
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
